@@ -1,0 +1,537 @@
+/* --- CONFIGURAÇÕES GERAIS E RESET --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #fff5f7; /* Fundo levemente rosado ultra suave como na imagem */
+    color: #4a4a4a;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* --- NAVBAR ESTILO PREMIUM --- */
+header {
+    background: #ffd6e0; /* Rosa pastel característico da imagem */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(227, 147, 167, 0.15);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Fonte elegante manuscrita para o logotipo */
+.logo {
+    font-family: 'Alex Brush', cursive;
+    font-size: 2.3rem;
+    color: #b54a67;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #d65a7f;
+}
+
+#temaBtn {
+    background: #333;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+#temaBtn:hover {
+    transform: scale(1.1);
+}
+
+/* --- CONFIGURAÇÃO DE SEÇÕES --- */
+section {
+    padding: 80px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.secao-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.subtitulo-rosa {
+    color: #d65a7f;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.secao-header h2 {
+    font-size: 2rem;
+    color: #2b2b2b;
+}
+
+.suporte-texto {
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 5px;
+}
+
+/* --- LAYOUT DA SEÇÃO SOBRE MIM (2 COLUNAS) --- */
+.secao-sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+.sobre-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+}
+
+.sobre-foto {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+/* Círculo perfeito com sombra suave para a foto */
+.moldura-foto {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 8px solid white;
+    box-shadow: 0 10px 30px rgba(214, 90, 127, 0.2);
+}
+
+.moldura-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sobre-texto {
+    flex: 1.2;
+}
+
+.sobre-texto h1 {
+    font-size: 2.5rem;
+    color: #2b2b2b;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.nome-destaque {
+    color: #d65a7f;
+}
+
+.sobre-texto p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    text-align: justify;
+    color: #5a5a5a;
+}
+
+.btn-rosa {
+    display: inline-block;
+    background: #d65a7f;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 15px;
+    box-shadow: 0 5px 15px rgba(214, 90, 127, 0.3);
+    transition: background 0.2s, transform 0.2s;
+}
+
+.btn-rosa:hover {
+    background: #b54a67;
+    transform: translateY(-2px);
+}
+
+/* --- GRIDS FLEXBOX PARA OS CARDS --- */
+.grid-tres-colunas, .grid-quatro-colunas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.grid-tres-colunas .card-moderno {
+    flex: 1;
+    min-width: 280px;
+    max-width: 360px;
+}
+
+.grid-quatro-colunas .card-moderno {
+    flex: 1;
+    min-width: 220px;
+    max-width: 260px;
+}
+
+/* --- DESIGN DOS CARDS MODERNOS --- */
+.card-moderno {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(227, 147, 167, 0.08);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-moderno:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(214, 90, 127, 0.15);
+}
+
+/* Ícones arredondados idênticos ao layout */
+.icone-circulo {
+    width: 65px;
+    height: 65px;
+    background: #fff0f3;
+    color: #d65a7f;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.card-moderno h3 {
+    font-size: 1.1rem;
+    color: #2b2b2b;
+    margin-bottom: 15px;
+}
+
+.card-moderno p {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+.card-moderno ul {
+    list-style: none;
+    text-align: left;
+    width: 100%;
+}
+
+.card-moderno ul li {
+    font-size: 0.88rem;
+    color: #666;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 15px;
+}
+
+/* Marcador customizado para a lista */
+.card-moderno ul li::before {
+    content: "•";
+    color: #d65a7f;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Barra de progresso para a seção Idiomas */
+.barra-progresso-container {
+    width: 100%;
+    height: 8px;
+    background: #f0f0f0;
+    border-radius: 4px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.barra-progresso {
+    height: 100%;
+    background: #d65a7f;
+    border-radius: 4px;
+}
+
+/* Botões específicos de dentro dos cards do portfólio */
+.btn-card {
+    display: block;
+    width: 100%;
+    background: #d65a7f;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-top: auto; /* Empurra o botão sempre para o fim do card */
+    transition: background 0.2s;
+}
+
+.btn-card:hover {
+    background: #b54a67;
+}
+
+/* --- SEÇÃO CONTATO (DUAS COLUNAS: FORM + LISTA) --- */
+.contato-container {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.form-moderno {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(227, 147, 167, 0.08);
+}
+
+.form-moderno input, .form-moderno textarea {
+    padding: 14px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    outline: none;
+    background: #fafafa;
+    transition: border-color 0.2s;
+}
+
+.form-moderno input:focus, .form-moderno textarea:focus {
+    border-color: #d65a7f;
+    background: white;
+}
+
+.btn-enviar {
+    background: #d65a7f;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-enviar:hover {
+    background: #b54a67;
+}
+
+/* Coluna Direita: Detalhes de Contato */
+.contato-info {
+    flex: 0.8;
+}
+
+.contato-info h3 {
+    font-size: 1.1rem;
+    color: #2b2b2b;
+    margin-bottom: 25px;
+}
+
+.item-contato {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.mini-icone {
+    width: 40px;
+    height: 40px;
+    background: #fff0f3;
+    color: #d65a7f;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+.item-contato .label {
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #999;
+    text-transform: uppercase;
+}
+
+.item-contato a {
+    color: #333;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.item-contato a:hover {
+    color: #d65a7f;
+}
+
+.mini-share {
+    font-size: 0.75rem;
+    color: #d65a7f;
+    margin-left: 3px;
+}
+
+/* --- RODAPÉ PREMIUM (IGUAL À FOTO) --- */
+.rodape-moderno {
+    background: #d65a7f;
+    color: white;
+    padding: 25px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    position: relative;
+    margin-top: 60px;
+}
+
+.btn-subir-topo {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.btn-subir-topo:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* ==========================================================================
+   SUPORTE COMPLETO AO TEMA ESCURO (DARK MODE)
+   ========================================================================== */
+.dark {
+    background: #141414;
+    color: #e0e0e0;
+}
+
+.dark header {
+    background: #1a1a1a;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.dark nav a {
+    color: #ccc;
+}
+
+.dark nav a:hover, .dark .logo {
+    color: #ff8fa9;
+}
+
+.dark #temaBtn {
+    background: #fff;
+    color: #141414;
+}
+
+.dark .secao-header h2, .dark .sobre-texto h1, .dark .card-moderno h3, .dark .contato-info h3 {
+    color: white;
+}
+
+.dark .subtitulo-rosa, .dark .nome-destaque {
+    color: #ff8fa9;
+}
+
+.dark .card-moderno, .dark .form-moderno {
+    background: #1d1d1d;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+.dark .icone-circulo, .dark .mini-icone {
+    background: #2a2a2a;
+    color: #ff8fa9;
+}
+
+.dark .card-moderno p, .dark .card-moderno ul li, .dark .sobre-texto p, .dark .suporte-texto {
+    color: #b0b0b0;
+}
+
+.dark .form-moderno input, .dark .form-moderno textarea {
+    background: #262626;
+    border: 1px solid #333;
+    color: white;
+}
+
+.dark .form-moderno input:focus, .dark .form-moderno textarea:focus {
+    border-color: #ff8fa9;
+}
+
+.dark .btn-rosa, .dark .btn-card, .dark .btn-enviar {
+    background: #ff8fa9;
+    color: #141414;
+    box-shadow: none;
+}
+
+.dark .btn-rosa:hover, .dark .btn-card:hover, .dark .btn-enviar:hover {
+    background: #ffb3c6;
+}
+
+.dark .item-contato a {
+    color: #e0e0e0;
+}
+
+.dark .item-contato a:hover {
+    color: #ff8fa9;
+}
+
+.dark .barra-progresso-container {
+    background: #333;
+}
+
+.dark .barra-progresso {
+    background: #ff8fa9;
+}
+
+.dark .rodape-moderno {
+    background: #1a1a1a;
+    border-top: 1px solid #333;
+}

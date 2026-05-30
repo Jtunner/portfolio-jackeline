@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Jackeline Rayssa</title>
+    <!-- Links para Fontes do Google (Manuscrita para o Logo e Inter para o texto) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Ícones do Font Awesome para os Cards e Contatos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Vinculação ao arquivo de estilos CSS personalizado -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <!-- MENU DE NAVEGAÇÃO SUPERIOR -->
+    <header>
+        <nav>
+            <h2 class="logo">Jackeline Rayssa</h2>
+            <ul>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <button id="temaBtn">🌙</button>
+        </nav>
+    </header>
+
+    <!-- SEÇÃO 1: SOBRE MIM -->
+    <section id="sobre" class="secao-sobre">
+        <div class="sobre-container">
+            <!-- Lado Esquerdo: Foto de Perfil com moldura redonda -->
+            <div class="sobre-foto">
+                <div class="moldura-foto">
+                    <!-- Substitua pelo caminho da sua foto real depois, ou deixe o placeholder -->
+                    <img src="foto-perfil.png" alt="Jackeline Rayssa">
+                </div>
+            </div>
+            <!-- Lado Direito: Textos e Botão de Ação -->
+            <div class="sobre-texto">
+                <span class="subtitulo-rosa">SOBRE MIM</span>
+                <h1>Olá, eu sou <br><span class="nome-destaque">Jackeline Rayssa</span></h1>
+                <p>Tenho 28 anos e atualmente sou estudante de Engenharia de Software na UNINTER.</p>
+                <p>Sou formada em Administração há dois anos e atuo profissionalmente na área administrativa há aproximadamente 8 anos. Atualmente trabalho em uma Autarquia Federal, em um Conselho de Classe Profissional.</p>
+                <p>Recentemente decidi iniciar uma transição de carreira para a área de tecnologia, buscando crescimento profissional e novos desafios.</p>
+                <p>Entre meus hobbies estão ouvir música e assistir séries, especialmente sitcoms.</p>
+                <a href="#contato" class="btn-rosa">Vamos nos conectar! <i class="fa-regular fa-heart"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 2: FORMAÇÃO -->
+    <section id="formacao">
+        <div class="secao-header">
+            <span class="subtitulo-rosa">FORMAÇÃO</span>
+            <h2>Minha Jornada Acadêmica</h2>
+        </div>
+
+        <!-- Container Flexbox para os 3 cards ficarem lado a lado -->
+        <div class="grid-tres-colunas">
+            <div class="card-moderno">
+                <div class="icone-circulo"><i class="fa-solid fa-graduation-cap"></i></div>
+                <h3>Formação Acadêmica</h3>
+                <ul>
+                    <li>Bacharel em Administração</li>
+                    <li>Graduanda em Engenharia de Software - UNINTER</li>
+                    <li>3º Semestre</li>
+                </ul>
+            </div>
+
+            <div class="card-moderno">
+                <div class="icone-circulo"><i class="fa-solid fa-book-open"></i></div>
+                <h3>Cursos Complementares</h3>
+                <p>Possuo diversos cursos voltados para tecnologia, desenvolvimento de software, ferramentas digitais e aperfeiçoamento profissional.</p>
+            </div>
+
+            <div class="card-moderno">
+                <div class="icone-circulo"><i class="fa-solid fa-globe"></i></div>
+                <h3>Idiomas</h3>
+                <p>Inglês - Nível Intermediário</p>
+                <!-- Barra de progresso visual simulada -->
+                <div class="barra-progresso-container">
+                    <div class="barra-progresso" style="width: 60%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 3: PORTFÓLIO -->
+    <section id="portfolio">
+        <div class="secao-header">
+            <span class="subtitulo-rosa">PORTFÓLIO</span>
+            <h2>Meus Projetos e Trabalhos</h2>
+        </div>
+
+        <!-- Container Flexbox para os 4 cards do portfólio -->
+        <div class="grid-quatro-colunas">
+            <div class="card-moderno card-projeto">
+                <div class="icone-circulo"><i class="fa-solid fa-code"></i></div>
+                <h3>Projeto HTML/CSS 01</h3>
+                <p>Desenvolvimento de um site utilizando HTML5 e CSS3, aplicando conceitos de responsividade e design moderno.</p>
+                <a href="#" class="btn-card">Ver Detalhes</a>
+            </div>
+
+            <div class="card-moderno card-projeto">
+                <div class="icone-circulo"><i class="fa-solid fa-laptop-code"></i></div>
+                <h3>Projeto HTML/CSS 02</h3>
+                <p>Landing Page responsiva desenvolvida para estudos acadêmicos, com foco na experiência do usuário.</p>
+                <a href="#" class="btn-card">Ver Detalhes</a>
+            </div>
+
+            <div class="card-moderno card-projeto">
+                <div class="icone-circulo"><i class="fa-solid fa-file-lines"></i></div>
+                <h3>Trabalhos Acadêmicos</h3>
+                <p>Produção de documentos, pesquisas e atividades acadêmicas relacionadas ao curso de Engenharia de Software.</p>
+                <a href="#" class="btn-card">Ver Detalhes</a>
+            </div>
+
+            <div class="card-moderno card-projeto">
+                <div class="icone-circulo"><i class="fa-brands fa-github"></i></div>
+                <h3>GitHub</h3>
+                <p>Confira meus repositórios com projetos, estudos e atividades acadêmicas.</p>
+                <a href="https://github.com/Jtunner" target="_blank" class="btn-card">Visitar GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 4: CONTATO -->
+    <section id="contato">
+        <div class="secao-header">
+            <span class="subtitulo-rosa">CONTATO</span>
+            <h2>Vamos Conversar?</h2>
+            <p class="suporte-texto">Preencha o formulário abaixo e entrarei em contato o mais breve possível!</p>
+        </div>
+
+        <div class="contato-container">
+            <!-- Lado Esquerdo: Formulário Moderno -->
+            <form id="formContato" class="form-moderno">
+                <input type="text" id="nome" placeholder="Seu nome">
+                <input type="email" id="email" placeholder="Seu e-mail">
+                <textarea id="mensagem" placeholder="Digite sua mensagem" rows="5"></textarea>
+                <button type="submit" class="btn-enviar"><i class="fa-regular fa-paper-plane"></i> Enviar Mensagem</button>
+            </form>
+
+            <!-- Lado Direito: Outras formas de contato em lista -->
+            <div class="contato-info">
+                <h3>Outras formas de contato</h3>
+                
+                <div class="item-contato">
+                    <div class="mini-icone"><i class="fa-solid fa-envelope"></i></div>
+                    <div>
+                        <span class="label">E-mail</span>
+                        <a href="mailto:jackelinersc98@gmail.com">jackelinersc98@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="item-contato">
+                    <div class="mini-icone"><i class="fa-brands fa-linkedin-in"></i></div>
+                    <div>
+                        <span class="label">LinkedIn</span>
+                        <a href="https://www.linkedin.com/in/jackeline-rayssa-a7567516a/" target="_blank">/in/jackeline-rayssa-a7567516a/ <i class="fa-solid fa-arrow-up-right-from-square mini-share"></i></a>
+                    </div>
+                </div>
+
+                <div class="item-contato">
+                    <div class="mini-icone"><i class="fa-brands fa-github"></i></div>
+                    <div>
+                        <span class="label">GitHub</span>
+                        <a href="https://github.com/Jtunner" target="_blank">github.com/Jtunner <i class="fa-solid fa-arrow-up-right-from-square mini-share"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ COMPLETO -->
+    <footer class="rodape-moderno">
+        <p>© 2026 - Jackeline Rayssa da Silva Costa. Todos os direitos reservados.</p>
+        <a href="#" class="btn-subir-topo"><i class="fa-solid fa-arrow-up"></i></a>
+    </footer>
+
+    <!-- Inclusão do script local -->
+    <script src="script.js"></script>
+
+</body>
+</html>
